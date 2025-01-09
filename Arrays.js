@@ -29,7 +29,7 @@ function readLine() {
 **/
 function getSecondLargest(nums) {
   // convert the nums array to set, then convert it back to array using the spread operator
-  // sort the array, then return the second to the last element, which is in index array.length - 2
+  // sort the array, then return the second to the last element, which is in the index array.length - 2, given that array.length > 1
   const tmpNum = new Set(nums);
   const sortedNums = [...tmpNum];
 
