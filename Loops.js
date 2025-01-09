@@ -27,25 +27,27 @@ function readLine() {
  * Print your output using 'console.log()'.
  */
 function vowelsAndConsonants(s) {
-  const newString = s.split('');
   const vowels = ['a', 'e', 'i', 'o', 'u'];
-  let vowelInString = []
-  let consonantInString = []
+  let vowelArr = [];
+  let consonantArr = [];
 
-  for (let i = 0; i < newString.length; i++) {
-    if (s[i] in vowels) newString.pop(){
-
-    }else {
-
+  for (let i = 0; i < s.length; i++) {
+    if (vowels.includes(s[i].toLowerCase())) {
+      vowelArr.push(s[i]);
     }
-
+    else {
+      consonantArr.push(s[i]);
+    }
   }
-  let i = 0;
-  for (i; i < newString.length; i++) {
-    console.log(newString[i]);
+
+  for (let i = 0; i < vowelArr.length; i++) {
+    console.log(vowelArr[i]);
+  }
+
+  for (let i = 0; i < consonantArr.length; i++) {
+    console.log(consonantArr[i]);
   }
 }
-
 
 function main() {
   const s = readLine();
